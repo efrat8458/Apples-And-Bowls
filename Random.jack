@@ -1,0 +1,102 @@
+class Random {
+    field int seed; //random seed
+    field int calledTime;
+
+    constructor Random new(int seedIn) {
+
+        let seed = seedIn;
+        let seed = rand();
+        let calledTime = 0;
+
+        return this;
+    }
+
+    method int rand() {
+        /** return a random number in the range 0..32767 */
+
+        let seed = seed + 20251;
+
+        if (seed < 0) {
+            let seed = seed - 32767 - 1;
+        }
+
+        return seed;
+    }
+
+    method int randRange(int range) {
+        /** return a random number in the range 0..range */
+        var int mask;
+        var int ret;
+
+        let mask = 1;
+        while (mask < range) {
+            let mask = mask * 2 + 1;
+        }
+
+        let ret = rand() & mask;
+        let calledTime = calledTime + 1;
+
+        while (ret > range) {
+            let ret = rand() & mask;
+            let calledTime = calledTime + 1;
+            let ret = ret & getShift();
+        }
+
+        return ret;
+    }
+
+    //get new shift number according to called times
+    method int getShift() {
+        var int temp;
+
+        let calledTime = calledTime + 1;
+        let temp = calledTime;
+        
+        while(temp > 9){
+
+            let temp = temp - 9;
+
+        }
+
+        return temp;
+    }
+
+    //dispose the Oject
+    method void dispose(){
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    method void addCallTime(int times){
+
+        let calledTime = calledTime + times;
+        return;
+
+    }
+
+
+    //shuffle the given array;
+    method Array shuffle(Array arr){
+        var Array retArr;
+        var Array arr5;
+        var int i;
+        var int rand;
+        let retArr = Array.new(5);
+        let arr5 = Array.new(5);
+        
+        let i = 0;
+        while (i<5){
+            let arr5[i] = arr[i];
+            let i = i+1;
+        }
+        let i=0;
+        while (i<5){
+            let rand = randRange(4-i);
+            let retArr[i] = arr5[rand];
+            let arr5[rand] = arr5[4-i];
+            let i = i+1;
+        }
+        return retArr;
+    }
+
+}

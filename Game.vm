@@ -1,0 +1,301 @@
+function Game.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+call Random.new 1
+pop this 0
+push constant 100
+call Sys.wait 1
+pop temp 0
+push pointer 0
+return
+function Game.isGoodLoc 2
+push argument 0
+pop pointer 0
+push argument 1
+push constant 4096
+sub
+pop local 0
+push local 0
+push constant 5
+call Math.divide 2
+pop local 1
+push local 1
+push constant 1
+eq
+not
+push local 1
+push constant 2
+eq
+not
+and
+push local 1
+push constant 3
+eq
+not
+and
+push local 1
+push constant 4
+eq
+not
+and
+push local 1
+push constant 5
+eq
+not
+and
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push local 1
+push constant 1
+sub
+push argument 2
+add
+pop pointer 1
+push that 0
+push argument 3
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 1
+return
+goto IF_END1
+label IF_FALSE1
+push constant 0
+return
+label IF_END1
+function Game.play 10
+push argument 0
+pop pointer 0
+push constant 4
+call Bowl.new 1
+pop local 5
+push constant 9
+call Bowl.new 1
+pop local 6
+push constant 14
+call Bowl.new 1
+pop local 7
+push constant 19
+call Bowl.new 1
+pop local 8
+push constant 24
+call Bowl.new 1
+pop local 9
+push constant 5
+call Array.new 1
+pop local 2
+push constant 0
+push local 2
+add
+push constant 1
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 2
+add
+push constant 2
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 2
+add
+push constant 3
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 2
+add
+push constant 4
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 2
+add
+push constant 5
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push this 0
+push local 2
+call Random.shuffle 2
+pop local 2
+push constant 0
+pop local 0
+label WHILE_EXP0
+push local 0
+push constant 5
+lt
+not
+if-goto WHILE_END0
+push local 0
+push local 2
+add
+pop pointer 1
+push that 0
+push local 0
+push constant 1
+add
+call PopsApples.new 2
+pop this 1
+push this 1
+call PopsApples.popUp 1
+pop temp 0
+push this 1
+call PopsApples.popDown 1
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 400
+call Sys.wait 1
+pop temp 0
+push constant 0
+pop local 0
+label WHILE_EXP1
+push local 0
+push constant 5
+lt
+not
+if-goto WHILE_END1
+push local 0
+push constant 1
+add
+push constant 5
+call Math.multiply 2
+push constant 4096
+add
+push local 0
+push local 2
+add
+pop pointer 1
+push that 0
+call Apple.new 2
+pop local 1
+push local 1
+call Apple.earaseApple 1
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP1
+label WHILE_END1
+push constant 1
+pop local 4
+push constant 1
+pop local 0
+label WHILE_EXP2
+push local 0
+push constant 6
+lt
+not
+if-goto WHILE_END2
+push constant 1
+push local 0
+call Apple.new 2
+pop local 1
+push constant 0
+pop local 3
+label WHILE_EXP3
+push local 3
+push constant 128
+eq
+not
+not
+if-goto WHILE_END3
+call Keyboard.keyPressed 0
+pop local 3
+push local 3
+push constant 130
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 1
+call Apple.moveLeft 1
+pop temp 0
+label IF_FALSE0
+push local 3
+push constant 131
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 1
+call Apple.moveUp 1
+pop temp 0
+label IF_FALSE1
+push local 3
+push constant 132
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push local 1
+call Apple.moveRight 1
+pop temp 0
+label IF_FALSE2
+push local 3
+push constant 133
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push local 1
+call Apple.moveDown 1
+pop temp 0
+label IF_FALSE3
+push constant 100
+call Sys.wait 1
+pop temp 0
+goto WHILE_EXP3
+label WHILE_END3
+push local 4
+push constant 1
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push pointer 0
+push local 1
+call Apple.getLocation 1
+push local 2
+push local 0
+call Game.isGoodLoc 4
+pop local 4
+label IF_FALSE4
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP2
+label WHILE_END2
+push local 4
+return
+function Game.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

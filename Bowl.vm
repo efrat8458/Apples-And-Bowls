@@ -1,0 +1,610 @@
+function Bowl.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop argument 0
+push pointer 0
+push argument 0
+call Bowl.drawBowl 2
+pop temp 0
+push pointer 0
+return
+function Bowl.drawBowl 0
+push argument 0
+pop pointer 0
+push argument 1
+push constant 5120
+add
+pop this 0
+push pointer 0
+push this 0
+call Bowl.drawPartA 2
+pop temp 0
+push pointer 0
+push this 0
+call Bowl.drawPartB 2
+pop temp 0
+push pointer 0
+push this 0
+push constant 1
+add
+call Bowl.drawPartB 2
+pop temp 0
+push pointer 0
+push this 0
+call Bowl.drawPartC 2
+pop temp 0
+push pointer 0
+push this 0
+call Bowl.drawPartD 2
+pop temp 0
+push pointer 0
+push this 0
+call Bowl.drawPartE 2
+pop temp 0
+push constant 0
+return
+function Bowl.drawPartA 0
+push argument 0
+pop pointer 0
+push constant 16384
+push argument 1
+add
+pop this 1
+push this 1
+push constant 0
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 32
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 64
+add
+push constant 15
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 96
+add
+push constant 31
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 128
+add
+push constant 63
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 160
+add
+push constant 126
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 192
+add
+push constant 252
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 224
+add
+push constant 504
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 256
+add
+push constant 1008
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 288
+add
+push constant 2016
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 320
+add
+push constant 4032
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 352
+add
+push constant 8064
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 384
+add
+push constant 256
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 416
+add
+push constant 512
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 448
+add
+push constant 512
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 480
+add
+push constant 2048
+neg
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Bowl.drawPartB 0
+push argument 0
+pop pointer 0
+push constant 16384
+push argument 1
+add
+push constant 1
+add
+pop this 1
+push this 1
+push constant 0
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 32
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 128
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 160
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 256
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 320
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 384
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 416
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 448
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 480
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Bowl.drawPartC 0
+push argument 0
+pop pointer 0
+push constant 16384
+push argument 1
+add
+push constant 3
+add
+pop this 1
+push this 1
+push constant 0
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 32
+add
+push constant 1
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 64
+add
+push constant 4096
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 96
+add
+push constant 2048
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 128
+add
+push constant 1024
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 160
+add
+push constant 32256
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 192
+add
+push constant 16128
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 224
+add
+push constant 8064
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 256
+add
+push constant 4032
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 288
+add
+push constant 2016
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 320
+add
+push constant 1008
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 352
+add
+push constant 504
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 384
+add
+push constant 255
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 416
+add
+push constant 127
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 448
+add
+push constant 127
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 480
+add
+push constant 31
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Bowl.drawPartD 0
+push argument 0
+pop pointer 0
+push constant 16384
+push argument 1
+add
+push constant 513
+add
+pop this 1
+push this 1
+push constant 0
+add
+push constant 30720
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 32
+add
+push constant 28672
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 64
+add
+push constant 24576
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 96
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 128
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 160
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 192
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 224
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 256
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 288
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 320
+add
+push constant 8192
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 352
+add
+push constant 4096
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 384
+add
+push constant 512
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 416
+add
+push constant 512
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 448
+add
+push constant 128
+neg
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 480
+add
+push constant 128
+neg
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Bowl.drawPartE 0
+push argument 0
+pop pointer 0
+push constant 16384
+push argument 1
+add
+push constant 514
+add
+pop this 1
+push this 1
+push constant 0
+add
+push constant 30
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 32
+add
+push constant 14
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 64
+add
+push constant 6
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 96
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 128
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 160
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 192
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 224
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 256
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 288
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 320
+add
+push constant 4
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 352
+add
+push constant 15
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 384
+add
+push constant 127
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 416
+add
+push constant 127
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 448
+add
+push constant 511
+call Memory.poke 2
+pop temp 0
+push this 1
+push constant 480
+add
+push constant 511
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Bowl.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

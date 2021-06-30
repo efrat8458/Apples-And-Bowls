@@ -1,0 +1,35 @@
+class PopsApples{
+    field Apple apple;
+    constructor PopsApples new(int num, int bowl){
+        let apple = Apple.new((bowl*5)+4096, num);
+        return this;
+    }
+
+    method void popUp(){
+        var int i;
+        let i=0;
+        while(i<8){
+            do apple.moveUp();
+            do Sys.wait(50);
+            let i = i+1;
+        }
+        
+        return;
+    }
+
+    method void popDown(){
+        var int i;
+        let i=0;
+        while(i<8){
+            do apple.moveDown();
+            do Sys.wait(50);
+            let i = i+1;
+        }
+        return;
+    }
+
+    method void dispose(){
+        do Memory.deAlloc(this);
+        return;
+    }
+}

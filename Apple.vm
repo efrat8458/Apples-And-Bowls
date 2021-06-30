@@ -1,0 +1,1639 @@
+function Apple.new 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop argument 0
+push argument 0
+pop this 1
+push argument 1
+pop this 3
+push pointer 0
+push argument 0
+push this 3
+call Apple.drawApple 3
+pop temp 0
+push pointer 0
+return
+function Apple.drawApple 0
+push argument 0
+pop pointer 0
+push argument 1
+pop this 0
+push argument 2
+push constant 1
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push pointer 0
+call Apple.drawPartA_1 1
+pop temp 0
+label IF_FALSE0
+push argument 2
+push constant 2
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push pointer 0
+call Apple.drawPartA_2 1
+pop temp 0
+label IF_FALSE1
+push argument 2
+push constant 3
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push pointer 0
+call Apple.drawPartA_3 1
+pop temp 0
+label IF_FALSE2
+push argument 2
+push constant 4
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push pointer 0
+call Apple.drawPartA_4 1
+pop temp 0
+label IF_FALSE3
+push argument 2
+push constant 5
+eq
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push pointer 0
+call Apple.drawPartA_5 1
+pop temp 0
+label IF_FALSE4
+push argument 2
+push constant 5
+gt
+if-goto IF_TRUE5
+goto IF_FALSE5
+label IF_TRUE5
+push pointer 0
+call Apple.drawPartA 1
+pop temp 0
+label IF_FALSE5
+push pointer 0
+call Apple.drawPartB 1
+pop temp 0
+push pointer 0
+call Apple.drawPartC 1
+pop temp 0
+push pointer 0
+call Apple.drawPartD 1
+pop temp 0
+push constant 0
+return
+function Apple.drawPartA 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 24576
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 8192
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 28704
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 20456
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 16380
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 2
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 2
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartA_1 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 24576
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 8192
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 28704
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 20456
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 16380
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 1026
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 1538
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 1281
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 1153
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 1025
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 1025
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 1025
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 1025
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 1025
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 16257
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartA_2 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 24576
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 8192
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 28704
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 20456
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 16380
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 1538
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 2306
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 4225
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 2177
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 1025
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 513
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 257
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 129
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 129
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 8065
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartA_3 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 24576
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 8192
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 28704
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 20456
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 16380
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 1538
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 2306
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 4225
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 2049
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 1025
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 3073
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 4097
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 4097
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 4225
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 3841
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartA_4 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 24576
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 8192
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 28704
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 20456
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 16380
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 3074
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 2562
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 2561
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 2305
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 2305
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 2177
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 8065
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 2049
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 2049
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 2049
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartA_5 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 24576
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 8192
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 28704
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 20456
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 16380
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 8066
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 130
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 129
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 129
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 3969
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 4097
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 4097
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 4225
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 2177
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 1793
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartB 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+push constant 1
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 3
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 2033
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 6157
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 8195
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 17280
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 17408
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 14336
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartC 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+push constant 512
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 1
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 3
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 2
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 2
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 6
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 12
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 8
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 16
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 32
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 32704
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 24704
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 7936
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.drawPartD 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+push constant 513
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 16384
+neg
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 16384
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 16384
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 24576
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 12288
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 4096
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 2048
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 1024
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 513
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 262
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 248
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.earaseApple 0
+push argument 0
+pop pointer 0
+push this 1
+pop this 0
+push pointer 0
+call Apple.earasePartA 1
+pop temp 0
+push pointer 0
+call Apple.earasePartB 1
+pop temp 0
+push pointer 0
+call Apple.earasePartC 1
+pop temp 0
+push pointer 0
+call Apple.earasePartD 1
+pop temp 0
+push constant 0
+return
+function Apple.earasePartA 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.earasePartB 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+push constant 1
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.earasePartC 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+push constant 512
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.earasePartD 0
+push argument 0
+pop pointer 0
+push constant 16384
+push this 0
+add
+push constant 513
+add
+pop this 2
+push this 2
+push constant 0
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 32
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 64
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 96
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 128
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 160
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 192
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 224
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 256
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 288
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 320
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 352
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 384
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 416
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 448
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push this 2
+push constant 480
+add
+push constant 0
+call Memory.poke 2
+pop temp 0
+push constant 0
+return
+function Apple.moveRight 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Apple.earaseApple 1
+pop temp 0
+push this 1
+push constant 1
+add
+pop this 1
+push pointer 0
+push this 1
+push this 3
+call Apple.drawApple 3
+pop temp 0
+push constant 0
+return
+function Apple.moveLeft 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Apple.earaseApple 1
+pop temp 0
+push this 1
+push constant 1
+sub
+pop this 1
+push pointer 0
+push this 1
+push this 3
+call Apple.drawApple 3
+pop temp 0
+push constant 0
+return
+function Apple.moveDown 0
+push argument 0
+pop pointer 0
+push this 1
+push constant 3609
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push pointer 0
+call Apple.earaseApple 1
+pop temp 0
+push this 1
+push constant 512
+add
+pop this 1
+push pointer 0
+push this 1
+push this 3
+call Apple.drawApple 3
+pop temp 0
+push constant 0
+return
+function Apple.moveUp 0
+push argument 0
+pop pointer 0
+push this 1
+push constant 512
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push pointer 0
+call Apple.earaseApple 1
+pop temp 0
+push this 1
+push constant 512
+sub
+pop this 1
+push pointer 0
+push this 1
+push this 3
+call Apple.drawApple 3
+pop temp 0
+push constant 0
+return
+function Apple.getLocation 0
+push argument 0
+pop pointer 0
+push this 1
+return
+function Apple.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

@@ -1,0 +1,33 @@
+class Win{
+    field int i;
+    constructor Win new(int win, int wins){
+        do Output.printString("entered win.");
+        do Screen.clearScreen();
+        do Output.moveCursor(5,30);
+        if(win = 1){
+            do Output.printString("WIN!!!");
+        }
+        else{
+            do Output.printString("LOSE...");
+        }
+        
+        do Screen.drawLine(100, 45, 400, 45);
+        do Screen.drawLine(100, 75, 400, 75);
+        do Output.moveCursor(8, 22);
+        do Output.printString("Your score: ");
+        do Output.printInt(wins*5);
+        do Output.printString(" points.");
+        //do Output.println();
+        do Output.moveCursor(10, 20);
+        do Output.printString("To play again press Enter.");
+        do Output.moveCursor(12, 19);
+        do Output.printString("Press any other key to exit.");
+        do Sys.wait(1000);
+        return this;
+    }
+
+    method void dispose(){
+        do Memory.deAlloc(this);
+        return;
+    }
+}

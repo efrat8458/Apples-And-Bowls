@@ -1,0 +1,41 @@
+class Main{
+    function void main () {
+        var int res;
+        var Game game;
+        var Win win;
+        var int wins;
+        var int games;
+        var int rand;
+        var int start;
+        var Instructions instructions;
+        let instructions = Instructions.new();
+        let start = 0;
+        while(~(start=128)){
+            let start = Keyboard.keyPressed();
+        }
+        let wins = 0;
+        let games = 128;
+        while(games=128){
+            do Screen.clearScreen();
+            do Output.moveCursor(10, 10);
+            do Output.printString("Please enter a number between 0-9: ");
+            let rand = 0;
+            while((rand<48) & (rand>-1) | (rand>57)){
+                let rand = Keyboard.keyPressed();
+            }
+            do Output.printInt(rand-48);
+            do Sys.wait(800);
+            do Screen.clearScreen();
+            let game = Game.new(rand-48);
+            let res = game.play();
+            do game.dispose();
+            let wins = wins+res;
+            let win = Win.new(res, wins);
+            let games = 0;
+            while(games=0){
+                let games = Keyboard.keyPressed();
+            }
+        }
+        return;
+    }
+}
