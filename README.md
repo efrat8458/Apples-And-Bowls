@@ -2,8 +2,7 @@ Project 09
 ===============================================================================
 # APPLES & BOWLS
 ***
-`Writen by:` Efrat D., 
-`Email:` efrat8458@gmail.com
+`Writen by:` Efrat D.
 ***
 
 ``` Nand to Tetris / Project 09 - memory jack game```
